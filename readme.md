@@ -14,6 +14,15 @@ The Personal Finance Tracker is a web application designed to help individuals m
 * JavaScript: For handling logic and functionality.
 * Tailwind CSS: For building responsive and customizable UI components.
 
+## Screenshot
+
+![image](https://github.com/user-attachments/assets/e98a5e9e-45b9-407e-85d2-fc4a30753c7f)
+![image](https://github.com/user-attachments/assets/67e3decb-25cb-472b-8fd4-20c74d01746f)
+![image](https://github.com/user-attachments/assets/c1457841-6b19-4ab4-8295-d18e39346d3f)
+
+
+
+
 
 ## How to use
 * Add your income and expense entries.
