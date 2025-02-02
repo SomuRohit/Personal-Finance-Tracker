@@ -1,0 +1,6 @@
+# pack-refs with: peeled fully-peeled sorted 
+7132dd3654c931832b1eb4dc60b763359c39853c refs/remotes/origin/main
+02695a4842918cd06afb581c78639d256860a346 refs/remotes/origin/neeraj542-patch-1
+14f63695bcdcdb49ed60e78d957b8b08ef6593cc refs/remotes/origin/neeraj542-patch-2
+c7334fbbb39ad4a1ac563be0273609285833b675 refs/remotes/origin/newfile
+a063ecf9dbbaf98b94949da74befd7ef0f9bc809 refs/remotes/origin/revert-6-main

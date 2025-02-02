@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./favicon_io/rb512x512.png"
+      sizes="64x64"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.css"
+    />
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/pdfmake.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.68/vfs_fonts.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <title>Personal Finance Tracker</title>
+  </head>
+
+  <body>
+    <!-- <header class="header-part"> -->
+    <nav>
+      <div class="navbar">
+        <a href="#" class="logo"
+          ></i> 💹 Finance Tracker</a
+        >
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#tracker">Personal Tracker</a></li>
+          <li><a href="#how-it-works">How it works?</a></li>
+        </ul>
+        <!-- <div class="menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div> -->
+      </div>
+    </nav>
+
+    <!-- Landing Page Content -->
+    <section class="section-box">
+      <div class="main-landing">
+        <div class="content">
+          <h1 class="under-welcome-h1">Make the best Management out of your Finance</h1>
+          <div class="under-h1"></div>
+          <p class="under-welcome-p">
+            Track your income and expenses effortlessly. Manage your budget, set
+            your management goals, and make smarter decisions for more secure future.
+          </p>
+        </div>
+        <div class="under-welcome-image">
+          <img src="./assets/rb_6381.png" alt="Power Finance" />
+        </div>
+      </div>
+    </section>
+    <br />
+    <div class="arrow">
+      <a href="#tracker " class="scroll-link">
+        <!-- <span></span> -->
+        <!-- <span></span> -->
+        <span></span>
+      </a>
+    </div>
+
+    <section class="main-content" id="tracker">
+      <div class="head-text">
+        <h1>Quick Access Your Personal Finance Tracker</h1>
+        <div class="under-head-text"></div>
+      </div>
+      <br />
+
+      <div class="tracker-part">
+        <div class="tracker-balance">
+          Current Balance: <span id="balance" class="current-balance"></span>
+        </div>
+
+        <div class="currency-filter">
+          <div class="filter-left">
+            <label for="currency"><b>Select Currency:</label></b>
+            <select id="currency" onchange="updateBalance()">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="INR" selected>INR</option>
+            </select>
+          </div>
+          <div class="filter-right">
+            <label for="text" class="date-box"><b>Choose Date:</label></b>
+            <input type="date" id="date" placeholder="Date" />
+          </div>
+        </div>
+
+        <div class="transaction-form">
+          <input type="text" id="description" placeholder="Description" />
+          <input type="number" id="amount" placeholder="Amount" />
+          <select id="type">
+            <option value="income"><b>Income</option></b>
+            <option value="expense"><b>Expense</option></b>
+          </select>
+          <button onclick="addTransaction()">Add Transaction</button>
+          <button onclick="handleDownload()">Export</button>
+        </div>
+        <div class="table-part" id="table-part">
+          <table id="transaction-table">
+            <tr>
+              <th><b>Date</th></b>
+              <th><b>Description</th></b>
+              <th><b>Amount</th></b>
+              <th><b>Type</th></b>
+              <th><b>Action</th></b>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-it-works" id="how-it-works">
+      <div class="head-text">
+        <h1>How it works?</h1>
+        <div class="under-head-text"></div>
+      </div>
+      <br />
+      <div class="working-content">
+        <div class="left-working">
+          <h5 class="working-head">
+            Unlock The Full Potential Of Your
+            <span class="text-lightBlue">Personal Finance Tracker</span>
+          </h5>
+          <!-- <div class="under-h1"></div> -->
+          <ul class="ul-items">
+            <li class="check-list-items">
+              <i data-feather="check" class="feather icon-check"></i>
+              <span><b>✔️ Seamlessly Monitor Finances</span></b>
+            </li>
+            <li class="check-list-items">
+              <i data-feather="check" class="feather icon-check"></i>
+              <span><b>✔️ Manage Transactions with Precision
+              </span></b>
+            </li>
+            <li class="check-list-items">
+              <i data-feather="check" class="feather icon-check"></i>
+              <span><b>✔️Customize currencies</span></b>
+            </li>
+            <li class="check-list-items">
+              <i class="icon-check" data-feather="check"></i>
+              <span><b>✔️Modify Transactions Effortlessly
+              </span></b>
+            </li>
+            <li class="check-list-items">
+              <i data-feather="check" class="feather icon-check"></i>
+              <span><b>✔️Instant Balance Updates</span></b>
+            </li>
+            <li class="check-list-items">
+              <i data-feather="check" class="feather icon-check"></i>
+              <span><b>✔️Export Instantly</span></b>
+            </li>
+          </ul>
+        </div>
+        <div class="right-working-image">
+          <!-- <div class="under-welcome-image"> -->
+          <img
+            src="./assets/3d-cryptocurrency-rendering-design.png"
+            target="_self"
+            alt="Power Finance"
+          />
+          <!-- </div> -->
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer">
+        <p id="openModal" class="popup-text">Created by Somu Rohit, Web Developer</p>
+      </div>
+    </footer>
+    <!-- Modal Popup -->
+    <div id="contactModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Contact Me</h2>
+        <br/>
+        <p><b>GitHub:</b> <a href="https://github.com/SomuRohit" target="_blank">github.com/SomuRohit</a></p>
+        <br/>
+        <p><b>LinkedIn:</b> <a href="https://www.linkedin.com/in/somu-rohit-a19888272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">linkedin.com/in/SomuRohit</a></p>
+      </div>
+    </div>
+    <script>
+      // Get the modal
+      var modal = document.getElementById("contactModal");
+
+      // Get the button that opens the modal
+      var btn = document.getElementById("openModal");
+
+      // Get the <span> element that closes the modal
+      var span = document.getElementsByClassName("close")[0];
+
+      // When the user clicks on the button, open the modal
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+
+      // When the user clicks on <span> (x), close the modal
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function(event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      }    
+    <script>
+      feather.replace();
+    </script>
+    <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/your-font-awesome-kit.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
