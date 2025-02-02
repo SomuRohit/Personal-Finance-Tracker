@@ -13,3 +13,18 @@ The Personal Finance Tracker is a web application designed to help individuals m
 * CSS: For styling the app.
 * JavaScript: For handling logic and functionality.
 * Tailwind CSS: For building responsive and customizable UI components.
+
+## How to Use
+Clone this repository to your local machine:
+
+'''bash
+git clone https://github.com/yourusername/Personal-Finance-Tracker.git
+'''
+
+Open the project in your browser:
+
+Navigate to the project directory and open index.html in a browser to see the application in action.
+Start Tracking:
+
+Add your income and expense entries.
+Customize categories and view your financial summary and charts.
